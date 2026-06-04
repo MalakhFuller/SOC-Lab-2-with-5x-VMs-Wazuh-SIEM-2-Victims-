@@ -218,6 +218,8 @@ NET START WazuhSvc
 
 Back in the dashboard, Win11-Victim01 showed up immediately as **Active**. Wazuh had already started doing Vulnerability Detection — 13 CVEs in Microsoft Edge and Microsoft Teams appeared within minutes of connection, several rated High severity. That was real threat intelligence with essentially zero configuration on my part.
 
+<img width="1555" height="481" alt="03_VulnDetection" src="https://github.com/user-attachments/assets/768299a8-725f-473c-8401-ab66fba6654f" />
+
 Removed the NAT adapter. Snapshot: **"Wazuh Agent Installed - Clean"**
 
 #### Phase 4 — Install Sysmon
@@ -266,7 +268,11 @@ NET STOP WazuhSvc
 NET START WazuhSvc
 ```
 
-In the Wazuh dashboard under **Threat Hunting**, filtering for `rule.groups: sysmon`, events started flowing immediately. All of them were from my own setup activity — but that was expected, and actually instructive:
+In the Wazuh dashboard under **Threat Hunting**, filtering for `rule.groups: sysmon`, events started flowing immediately. 
+
+<img width="1560" height="643" alt="02-ThreatHunting" src="https://github.com/user-attachments/assets/bd11abb4-0b17-4fd0-a1d1-1e039ef51936" />
+
+All of them were from my own setup activity — but that was expected, and actually instructive:
 
 - *"Suspicious Windows cmd shell execution"*
 - *"Windows command prompt started by an abnormal process"*
@@ -332,6 +338,8 @@ The install was straightforward. Snapshot: **"Fresh Install - Clean"**
 Same process as Win11-Victim01. Added a temporary NAT adapter, opened the Wazuh dashboard from a browser inside the VM, deployed a new agent configured for `WinServer-DC01`, ran the generated PowerShell command, and started the service with `NET START WazuhSvc`.
 
 All three agents confirmed active in the Wazuh dashboard.
+
+<img width="2407" height="402" alt="01 Agents Working" src="https://github.com/user-attachments/assets/36781fc0-561c-4c84-97a4-2cef24100220" />
 
 Removed the NAT adapter.
 
@@ -405,6 +413,8 @@ Created two test users in the `DomainUsers` OU:
 Both set with "Password never expires" and "User must not change password at next logon" unchecked — appropriate for a lab environment.
 
 Created a security group `SOC-Lab-Users` in the `Groups` OU, then added jsmith and jdoe as members.
+
+<img width="753" height="351" alt="04-ActiveDirectory" src="https://github.com/user-attachments/assets/2fc36d7d-a3b7-4628-b631-fcf17ca74efe" />
 
 Snapshot: **"AD Structure Complete - Users and OUs Created"**
 
