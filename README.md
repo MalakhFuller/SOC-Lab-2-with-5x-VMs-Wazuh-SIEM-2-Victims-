@@ -1,2 +1,2 @@
-# SOC-Lab-2-5xVMs-WazuhSIEM-ADDC-Attacker-and-2-Victims
+# SOC Lab 2: 5x VMs | SIEM | Active Directory Domain Controller | 2 Victims | 1 AttackBox
 This repository documents the build-out and exercises of a multi-VM SOC lab environment designed to simulate real enterprise security operations, which is being built as a hands-on learning environment to develop SOC analyst and detection engineering skills. The lab features a Wazuh SIEM/XDR manager receiving telemetry from Windows and Linux endpoints instrumented with Sysmon, with a dedicated Kali Linux attack box for adversary simulation mapped to MITRE ATT&CK techniques. Each project is intended to build on the last, progressively covering detection engineering, log analysis, threat hunting, and incident response workflows.
