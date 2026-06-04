@@ -1,6 +1,7 @@
 # SOC Lab 2: 5x VMs | SIEM | AD DC | 2 Victims | 1 AttackBox
 
 **Completed:** 2026-06-01
+
 **Author:** Malakh Fuller
 
 > **Privacy note:** Internal lab IP addresses have been anonymized in this writeup and related screenshots. All testing was performed exclusively on my own isolated home lab network.
