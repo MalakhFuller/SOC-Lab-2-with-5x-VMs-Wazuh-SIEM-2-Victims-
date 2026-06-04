@@ -220,6 +220,7 @@ Back in the dashboard, Win11-Victim01 showed up immediately as **Active**. Wazuh
 
 <img width="1555" height="481" alt="03_VulnDetection" src="https://github.com/user-attachments/assets/768299a8-725f-473c-8401-ab66fba6654f" />
 
+
 Removed the NAT adapter. Snapshot: **"Wazuh Agent Installed - Clean"**
 
 #### Phase 4 — Install Sysmon
