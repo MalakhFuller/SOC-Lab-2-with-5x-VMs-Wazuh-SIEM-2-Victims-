@@ -34,7 +34,8 @@ Complete build-out of a 5-VM isolated SOC lab from scratch, including hypervisor
 - Domain joining of Windows and Linux endpoints
 - Log collection and forwarding configuration
 - Basic alert triage — identifying false positives from admin activity
-**Status:** [Completed](./01_SOC-Lab-2-Full-Build.md)
+**Status:**
+[Completed](./01_SOC-Lab-2-Full-Build.md)
  
 ---
  
