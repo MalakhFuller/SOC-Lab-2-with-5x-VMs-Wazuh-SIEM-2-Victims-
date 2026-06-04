@@ -27,7 +27,7 @@ This was a significant upgrade from my prior dual-machine lab setup, where I use
 | **Domain Controller** | Windows Server 2025 (Evaluation) |
 | **Endpoint Tools** | Wazuh Agent 4.14.5, Sysmon v15.20 (SwiftOnSecurity config) |
 | **Skills Applied** | PowerShell, Linux CLI, Active Directory, Network Segmentation, Log Forwarding |
-| **Prior Knowledge** | CompTIA A+, Network+, Security+, CySA+ (in progress), TryHackMe SOC Level 1, prior home SOC lab |
+| **Prior Knowledge** | CompTIA A+, Network+, Security+, CySA+ (in progress), TryHackMe rooms, and prior home SOC lab |
 
 ---
 
