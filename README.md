@@ -35,6 +35,7 @@ Complete build-out of a 5-VM isolated SOC lab from scratch, including hypervisor
 - Log collection and forwarding configuration
 - Basic alert triage — identifying false positives from admin activity
 **Status:**
+
 [Completed](https://github.com/MalakhFuller/SOC-Lab-2-with-5x-VMs-Wazuh-SIEM-2-Victims-/blob/main/SOC_Lab-The_Build_Out.md)
  
 ---
