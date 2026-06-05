@@ -1,6 +1,6 @@
 # SOC Lab 2: 5x VMs | SIEM | AD DC | 2 Victims | 1 AttackBox
 
-**Completed:** 2026-06-01
+**Completed:** 2026-06-04
 
 **Author:** Malakh Fuller
 
