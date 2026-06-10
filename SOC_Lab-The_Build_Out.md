@@ -582,11 +582,12 @@ My prior dual-machine home SOC lab covered foundational ground:
 
 With the 5x VM lab and Active Directory now in place, Phase 2 is planned to go significantly deeper:
 
-- **Project 1:** Credential Attack Against Active Directory (password spray, MITRE T1110.003)
-- **Project 2:** Kerberoasting (Event ID 4769 detection, MITRE T1558.003)
-- **Project 3:** Lateral Movement Detection
-- **Project 4:** Custom Detection Rule Writing
-- **Project 5:** Full Purple Team Exercise — end-to-end attack chain with incident report
+- **Project 1:** Deploy and configure Microsoft Defender for Endpoint across lab endpoints, with integrated telemetry from Wazuh SIEM
+- **Project 2:** Credential Attack Against Active Directory (password spray, MITRE T1110.003)
+- **Project 3:** Kerberoasting (Event ID 4769 detection, MITRE T1558.003)
+- **Project 4:** Lateral Movement Detection
+- **Project 5:** Custom Detection Rule Writing
+- **Project 6:** Full Purple Team Exercise — end-to-end attack chain with incident report
 
 ---
 
