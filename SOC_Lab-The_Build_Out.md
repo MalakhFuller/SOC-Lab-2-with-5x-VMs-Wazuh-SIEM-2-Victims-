@@ -580,14 +580,27 @@ My prior dual-machine home SOC lab covered foundational ground:
 - **Project 4:** SOC-Style Phishing Email Triage Report
 - **Project 5:** End-to-End SOC Investigation: Reconnaissance to Detection
 
-With the 5x VM lab and Active Directory now in place, Phase 2 is planned to go significantly deeper:
+With the 5-VM lab and Active Directory now in place, Phase 2 goes significantly deeper, building a multi-layer detection environment before running any attack simulations, then exercising it end-to-end.
 
-- **Project 1:** Deploy and configure Microsoft Defender for Endpoint across lab endpoints, with integrated telemetry from Wazuh SIEM
-- **Project 2:** Credential Attack Against Active Directory (password spray, MITRE T1110.003)
-- **Project 3:** Kerberoasting (Event ID 4769 detection, MITRE T1558.003)
-- **Project 4:** Lateral Movement Detection
-- **Project 5:** Custom Detection Rule Writing
-- **Project 6:** Full Purple Team Exercise — end-to-end attack chain with incident report
+## Phase 2 — SOC Detection & DFIR Engineering
+
+### Infrastructure Build-Out (continued)
+
+- **Project 1:** Deploy and configure Microsoft Defender for Endpoint across lab endpoints, with integrated telemetry flowing into Wazuh SIEM.
+- **Project 2:** Deploy Splunk dual-SIEM architecture — Splunk Enterprise (Developer License) running alongside Wazuh, with Universal Forwarders on the Windows and Linux endpoints. Validate identical event capture across both platforms and build SPL fundamentals.
+- **Project 2a:** Deploy Suricata network IDS, integrated into both SIEMs, adding network-layer visibility alongside endpoint telemetry.
+- **Project 2b:** Deploy TheHive case management, connected to Splunk and Wazuh alerting, to capture the full alert-to-closure incident response workflow.
+
+### Attack Simulation & Detection
+
+- **Project 3:** Credential Attack Against Active Directory — password spray (MITRE T1110.003), detected across both SIEMs.
+- **Project 4:** Kerberoasting — Event ID 4769 detection (MITRE T1558.003), with detection logic written in both Wazuh and SPL.
+- **Project 5:** Lateral Movement Detection, including live endpoint hunting with Velociraptor to scope attacker activity in real time.
+- **Project 6:** Custom Detection Rule Writing — authoring and tuning custom detections in both Wazuh and Splunk SPL.
+
+### Capstone
+
+- **Project 7:** Full Purple Team Exercise — end-to-end attack chain with post-incident forensic investigation using Velociraptor, KAPE + EZ Tools, Autopsy, and Volatility, culminating in a complete incident report drawing telemetry from MDE, Wazuh, Splunk, Suricata, and TheHive.
 
 ---
 
